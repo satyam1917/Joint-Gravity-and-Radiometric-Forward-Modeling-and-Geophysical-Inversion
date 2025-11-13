@@ -1,9 +1,17 @@
-# Joint-Gravity-and-Radiometric-Forward-Modeling-and-Geophysical-Inversion
-This project investigates the critical challenge of non-uniqueness inherent to potential field geophysics, demonstrating how the strategic integration of complementary datasets (gravity and radiometrics) is essential for achieving unique and geologically meaningful subsurface solutions.
+# Executive Summary: Constrained Joint Geophysical Inversion
+
+This project investigates the critical challenge of **non-uniqueness** inherent to potential field geophysics, demonstrating how the strategic integration of complementary datasets (gravity and radiometrics) is essential for achieving unique **and** geologically meaningful subsurface solutions.
+
 The investigation was conducted across six distinct phases:
-Complex Forward Modeling and Data Processing: A realistic 2D geological model, featuring a deep faulted low-density basin (Δρ = -0.15 g/cc) and a high-density body (Δρ = +0.20 g/cc) beneath irregular topography, was constructed. Forward modeling generated realistic, noisy synthetic data profiles. These raw data were then processed via Bouguer Correction (gravity) and moving-average filtering (radiometrics).
-Parametrized Inversion (Feasibility Check): An initial constrained inversion, holding all geometric parameters fixed, successfully recovered the five unknown physical property values (ρ and K, U, Th concentrations) with high accuracy. This validated the core joint modeling engine.
-Blind Inversion and Non-Uniqueness: A non-linear global inversion (Differential Evolution) was executed, attempting to recover nine coupled physical and geometric parameters from the initial, deep-body model. This test failed, resulting in a low-misfit but geologically spurious model (compensating mass distribution), thereby demonstrating the classic problem of non-uniqueness.
-Model Adjustment for Constraint: To resolve the ambiguity, the model was strategically revised: the high-density body was moved to a shallow depth (<550 m). This placed the body within the effective range of the surface radiometric survey.
-Successful Constrained Inversion: The final inversion utilized this adjusted geometry to introduce a coupled constraint: the sharp gravity anomaly provided vertical constraint (depth control), while the distinct radiometric signature provided an accurate lateral constraint (position control).
-The final constrained joint inversion successfully recovered all eleven geometric and physical parameters with near-perfect accuracy (100% success rate). This result conclusively proves that a geophysical model design that enforces constraints via data complementarity is the fundamental requirement for transforming non-unique potential field data into reliable structural interpretations.
+
+1.  **Complex Forward Modeling and Data Processing:** A realistic 2D geological model, featuring a deep faulted low-density basin (Δρ = -0.15 g/cc) and a high-density body (Δρ = +0.20 g/cc) beneath irregular topography, was constructed. Forward modeling generated realistic, noisy synthetic data profiles. These raw data were then processed via **Bouguer Correction** (gravity) and **moving-average filtering** (radiometrics).
+
+2.  **Parametrized Inversion (Feasibility Check):** An initial constrained inversion, holding all geometric parameters fixed, successfully recovered the five unknown physical property values (ρ and K, U, Th concentrations) with high accuracy. This validated the core joint modeling engine.
+
+3.  **Blind Inversion and Non-Uniqueness:** A non-linear global inversion (Differential Evolution) was executed, attempting to recover nine coupled physical and geometric parameters from the initial, deep-body model. This test failed, resulting in a low-misfit but **geologically spurious model** (compensating mass distribution), thereby demonstrating the classic problem of non-uniqueness.
+
+4.  **Model Adjustment for Constraint:** To resolve the ambiguity, the model was strategically revised: the high-density body **was moved** to a **shallow depth** (<550 m). This placed the body within the effective range of the surface radiometric survey.
+
+5.  **Successful Constrained Inversion:** The final inversion utilized this adjusted geometry to introduce a **coupled constraint**: the sharp gravity anomaly provided **vertical constraint** (depth control), while the distinct radiometric signature provided an accurate **lateral constraint** (position control).
+
+The final constrained joint inversion successfully recovered **all eleven** geometric and physical parameters with near-perfect accuracy (100% success rate). This result conclusively proves that a **geophysical model design** that enforces constraints via data complementarity is the fundamental requirement for transforming non-unique potential field data into reliable structural interpretations.
